@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 10, 10, 10;
+  --background-start-rgb: 253, 251, 247;
+  --background-end-rgb: 253, 251, 247;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+  font-family: 'Inter', sans-serif;
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #002366 0%, #001233 100%);
+}
+
+.gold-text {
+  background: linear-gradient(to right, #D4AF37, #F9E498, #D4AF37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-button {
+  background: linear-gradient(45deg, #D4AF37, #F9E498);
+  transition: all 0.3s ease;
+}
+
+.gold-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+}
